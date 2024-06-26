@@ -123,9 +123,13 @@ spec:
       action: http:backstage:request
       input:
         method: 'POST'
-        path: '/proxy/sonarqube/projects/create?name=${{ parameters.appName }}&organization=${{ parameters.orgName }}&project=${{ parameters.orgName }}_${{ parameters.appName }}'
+        path: '/proxy/sonarqube/projects/create
         headers:
-          content-type: 'application/json'
+          content-type: 'application/json'	
+		    body:
+	        name: ${{ parameters.appName }}
+	        organization: ${{ parameters.orgName }}
+	        project: ${{ parameters.orgName }}_${{ parameters.appName }}'
 
     - id: circleci
       name: Follow new project on CircleCI
