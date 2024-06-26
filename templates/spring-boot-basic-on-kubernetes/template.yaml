@@ -2,6 +2,8 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: spring-boot-basic-on-kubernetes-template
+  annotations:
+    sonarqube.org/project-key: ${{ values.orgName }}_${{ values.appName }}
   title: Create a Spring Boot app for Kubernetes
   description: Create a Spring Boot app for Kubernetes
   tags:
