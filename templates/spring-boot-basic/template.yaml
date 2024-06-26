@@ -12,7 +12,7 @@ metadata:
     - renovate
     - sonarqube
 spec:
-  owner: piomin
+  owner: dawncoll
   system: microservices
   type: service
 
