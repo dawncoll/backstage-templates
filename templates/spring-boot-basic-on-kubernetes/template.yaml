@@ -126,10 +126,10 @@ spec:
         path: '/proxy/sonarqube/projects/create
         headers:
           content-type: 'application/json'	
-		    body:
-	        name: ${{ parameters.appName }}
-	        organization: ${{ parameters.orgName }}
-	        project: ${{ parameters.orgName }}_${{ parameters.appName }}'
+	body:
+	  name: ${{ parameters.appName }}
+	  organization: ${{ parameters.orgName }}
+	  project: ${{ parameters.orgName }}_${{ parameters.appName }}'
 
     - id: circleci
       name: Follow new project on CircleCI
