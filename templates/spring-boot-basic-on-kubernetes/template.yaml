@@ -127,7 +127,7 @@ spec:
         headers:
           content-type: 'application/json'
         body:
-	  name: ${{ parameters.appName }}
+          name: ${{ parameters.appName }}
           organization: ${{ parameters.orgName }}
           project: ${{ parameters.orgName }}_${{ parameters.appName }}
 	  
