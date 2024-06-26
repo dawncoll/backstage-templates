@@ -128,9 +128,9 @@ spec:
           content-type: 'application/json'
         body:
 	  name: ${{ parameters.appName }}
-	  organization: ${{ parameters.orgName }}
-	  project: ${{ parameters.orgName }}_${{ parameters.appName }}
-
+          organization: ${{ parameters.orgName }}
+          project: ${{ parameters.orgName }}_${{ parameters.appName }}
+	  
     - id: circleci
       name: Follow new project on CircleCI
       action: http:backstage:request
