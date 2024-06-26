@@ -125,8 +125,8 @@ spec:
         method: 'POST'
         path: '/proxy/sonarqube/projects/create'
         headers:
-          content-type: 'application/json'	
-	body:
+          content-type: 'application/json'
+        body:
 	  name: ${{ parameters.appName }}
 	  organization: ${{ parameters.orgName }}
 	  project: ${{ parameters.orgName }}_${{ parameters.appName }}
